@@ -1,0 +1,32 @@
+﻿@page "/reverse-hill-pattern"
+<h3>Reverse_hill_pattern</h3>
+
+<ul>
+    <li>Increasing triangle pattern(space)</li>
+    <li>Decreasing triangle pattern(Star)</li>
+    <li>Decreasing triangle pattern(Star)</li>
+
+</ul>
+<div style="font-size:50px">
+    @for (int i = 1; i <= Number; i++)
+    {
+        <div>
+            @for (int k = 1; k <= i; k++)
+            {
+                <span>&nbsp;&nbsp;</span>
+            }
+            @for (int k = i; k < Number; k++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+            @for (int k = i; k <= Number; k++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+        </div>
+    }
+
+</div>
+@code {
+    private int Number = 5;
+}

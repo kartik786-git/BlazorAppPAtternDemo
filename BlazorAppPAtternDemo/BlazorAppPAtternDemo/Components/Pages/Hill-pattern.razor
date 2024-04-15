@@ -1,0 +1,31 @@
+﻿@page "/hill-pattern"
+<h3>Hill_pattern</h3>
+<ul>
+    <li>Decreasing triangle pattern - space </li>
+    <li>Increasing triangle pattern - Star </li>
+    <li>Increasing triangle pattern - Star</li>
+
+</ul>
+<div style="font-size:50px">
+    @for (int i = 1; i <= Number; i++)
+    {
+        <div>
+            @for (int k = i; k <= Number; k++)
+            {
+                <span>&nbsp;&nbsp;</span>
+            }
+            @for (int k = 1; k < i; k++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+            @for (int l = 1; l <= i; l++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+        </div>
+    }
+
+</div>
+@code {
+    private int Number = 5;
+}

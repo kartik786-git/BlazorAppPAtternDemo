@@ -1,0 +1,27 @@
+﻿@page "/right-sided-decreasing-triangle-pattern"
+<h3>Right_sided_decreasing_triangle_pattern</h3>
+
+<ul>
+    <li>Increasing triangle pattern - Space</li>
+    <li>Decreasing triangle pattern - Star </li>
+
+</ul>
+<div style="font-size:50px">
+    @for (int i = 1; i <= Number; i++)
+    {
+        <div>
+            @for (int k = 1; k <= i; k++)
+            {
+                <span>&nbsp;&nbsp;</span>
+            }
+            @for (int k = i; k <= Number; k++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+        </div>
+    }
+
+</div>
+@code {
+    private int Number = 5;
+}

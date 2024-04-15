@@ -1,0 +1,59 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">BlazorAppPAtternDemo</a>
+    </div>
+</div>
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="square-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Square pattern
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="increasing-triangle-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Increasing triangle
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="decreasing-triangle-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Decreasing triangle
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="right-sided-triangle-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Right sided triangle
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="right-sided-decreasing-triangle-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> RightSideddecreasing
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="hill-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Hill pattern
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="reverse-hill-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Reverse hill pattern
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="diamond-pattern">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Diamond pattern
+            </NavLink>
+        </div>
+    </nav>
+</div>
+

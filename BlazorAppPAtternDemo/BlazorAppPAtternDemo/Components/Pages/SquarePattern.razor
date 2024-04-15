@@ -1,0 +1,24 @@
+﻿@page "/square-pattern"
+<h3>SquarePattern</h3>
+
+<ul>
+    <li>row</li>
+    <li>column</li>
+</ul>
+
+<div style="font-size:50px">
+    @for (int i = 1; i <= Number; i++)
+    {
+        <div>
+            @for (int k = 1; k <= Number; k++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+        </div>
+    }
+
+</div>
+
+@code {
+    private int Number = 5;
+}

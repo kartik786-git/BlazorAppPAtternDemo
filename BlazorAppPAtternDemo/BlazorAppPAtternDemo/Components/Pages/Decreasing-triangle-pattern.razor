@@ -1,0 +1,22 @@
+﻿@page "/decreasing-triangle-pattern"
+<h3>Decreasing_triangle_pattern</h3>
+<ul>
+    <li>Row</li>
+    <li>Column</li>
+</ul>
+
+<div style="font-size:50px">
+    @for (int i = 1; i <= Number; i++)
+    {
+        <div>
+            @for (int k = i; k <= Number; k++)
+            {
+                <span style="color:darkblue">* </span>
+            }
+        </div>
+    }
+
+</div>
+@code {
+    private int Number = 5;
+}
